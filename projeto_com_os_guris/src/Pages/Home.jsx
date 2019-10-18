@@ -1,20 +1,24 @@
-import React,{Component} from 'react'
+import React, {Component} from 'react'
+import Header from './../Components/Header'
+import image from "./../Assets/Img/Ti.jpg"
 
 export default class Home extends Component{
 
-
     render(){
         return(
-            <header className="masthead">
-                <div className="container">
-                <div className="intro-text">
-                    <div className="intro-lead-in">Welcome To Our Studio!</div>
-                    <div className="intro-heading text-uppercase">It's Nice To Meet You</div>
-                    <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-                </div>
-                </div>
-            </header>
+            <div>
+                <Header
+                image={image}
+                showButton={true}
+                titulo="bem vindo"
+                subtitulo="venha conhecer nossos projetos"
+                link="/services"
+                texto="saiba mais"
+                />
+             </div>
+       
         )
-            
+
     }
+
 }
