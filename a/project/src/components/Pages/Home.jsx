@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Header from './../Common/Header'
-import {image} from "../../"
+import image from "../../Assets/Img/Ti.jpg"
+
+import Services from '../Common/Services'
 
 export default class Home extends Component{
 
@@ -10,11 +12,12 @@ export default class Home extends Component{
         return (
             <div>     
                 <Header title="Welcome to Our Studio"
-                        subtitle="IT'S NICE TO MEE YOU"
+                        subtitle="it's nice to meet you"
                         buttonText="diga mais"
                         link="/services"
                         showButton={true}
-                        image="/img/header-bg.jpg" /> 
+                        image={image}/>
+                <Services/>         
             </div>
         )
     }

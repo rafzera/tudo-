@@ -5,7 +5,7 @@ export default class Header extends Component{
 
     render(){
         return(
-        <header className="masthead" style={{backgroundImage: 'url("' +  this.props.image+ '")'}}>
+        <header className="masthead" style={{backgroundImage:  `url(${this.props.image })`}}>
             <div className="container">
                 <div className="intro-text">
                     <div className="intro-lead-in">{this.props.title}</div>
